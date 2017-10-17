@@ -8,7 +8,7 @@ val akkaVersion = "2.5.3"
 val upickleVersion = "0.4.4"
 val scalatagsVersion = "0.6.5"
 val autowireVersion = "0.2.6"
-val akkaHttpVersion = "10.0.9"
+val akkaHttpVersion = "10.0.10"
 val elastic4sVersion = "5.4.5"
 lazy val scalaTestVersion = "3.0.1"
 
@@ -152,12 +152,15 @@ lazy val data = project
       "com.sksamuel.elastic4s" %% "elastic4s-core" % elastic4sVersion,
       "com.sksamuel.elastic4s" %% "elastic4s-embedded" % elastic4sVersion,
       "com.typesafe.akka" %% "akka-stream" % akkaVersion,
-      "org.json4s" %% "json4s-native" % "3.4.2",
+      "org.json4s" %% "json4s-native" % "3.5.3",
       "me.tongfei" % "progressbar" % "0.5.5",
       "org.apache.maven" % "maven-model-builder" % "3.3.9",
       "org.jsoup" % "jsoup" % "1.10.1",
       "com.typesafe.play" %% "play-ahc-ws" % "2.6.0-RC2",
-      "org.apache.ivy" % "ivy" % "2.4.0"
+      "org.apache.ivy" % "ivy" % "2.4.0",
+      "com.typesafe.akka" %% "akka-http" % "10.0.10",
+      "de.heikoseeberger" %% "akka-http-json4s" % "1.18.0",
+      "org.json4s" %% "json4s-native" % "3.5.3"
     ),
     buildInfoPackage := "build.info",
     buildInfoKeys := Seq[BuildInfoKey](baseDirectory in ThisBuild)
